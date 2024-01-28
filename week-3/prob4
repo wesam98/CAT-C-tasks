@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+void check (int user );
+int pass;
+int main()
+{
+    int user;
+
+    printf("enter your user ");
+    scanf("%d" ,&user);
+    check(user );
+
+
+    return 0;
+}
+
+void check (int user)
+{
+if(user == 1234)
+{
+    printf("enter your password ");
+    scanf("%d",&pass);
+    if(pass==0000)
+        printf("welcome");
+        else
+        printf("try again ");
+
+}
+else
+    printf("invalid user");
+
+}

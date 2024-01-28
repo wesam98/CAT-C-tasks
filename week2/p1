@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+	int hours,salary;
+	printf("Please enter your working hours:\n");
+	scanf("%d",&hours);
+	if(hours<40)
+	{
+		printf("Your salary is %d",((hours*50)-(hours*5)));
+	}
+	else
+	{
+		printf("Your salary is %d",(hours*50));
+	}
+return 0;
+}

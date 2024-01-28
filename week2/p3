@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+	int ID;
+	printf("Please enter the ID");
+	scanf("%d",&ID);
+	if(ID==1234)
+		printf("Harry");
+	else if (ID==5678)
+		printf("Ron");
+	else if(ID==1145)
+		printf("Hermione");
+	else
+		printf("Wrong ID");
+return 0;
+}

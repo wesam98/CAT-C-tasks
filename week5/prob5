@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int x=1, y=3, z=8;
+    int *px=&x;
+    int *py=&y;
+    int *pz=&z;
+    printf("%d %d %d \n",x ,px ,*px);
+    printf("%d %d %d \n",y ,py ,*py);
+    printf("%d %d %d \n",z ,pz ,*pz);
+    printf("swapping pointers \n");
+    pz=px;
+    px=py;
+    py=pz;
+     printf("%d %d %d \n",x ,px ,*px);
+    printf("%d %d %d \n",y ,py ,*py);
+    printf("%d %d %d \n",z ,pz ,*pz);
+}

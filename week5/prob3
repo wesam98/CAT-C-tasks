@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+int mul (int *a ,int *b,int n1);
+int main()
+{int a[5]={3,2,1,5,0};
+int b[5]={4,3,1,9,4};
+int sum= mul(a,b,5);
+printf(" scaler multiplication is: %d",sum);
+}
+int mul (int *a,int *b,int n1)
+{ int sum=0;
+    for(int i=0;i<n1;i++)
+    {
+        sum+=a[i] * b[i];
+
+    }
+    return sum;
+}

@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int get_max (int x,int y);
+int main()
+{int num1,num2;
+
+printf("please enter two numbers ");
+scanf("%d %d",&num1 ,&num2);
+printf("the max is %d",get_max(num1,num2));
+
+    return 0;
+}
+int get_max (int x,int y)
+{
+   if(x>y)
+    return x;
+   else
+    return y;
+
+}
+
+

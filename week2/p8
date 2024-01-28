@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n;
+    int m_table =1;
+    printf("Please Enter the number : ");
+    scanf("%d",&n);
+
+
+    for(int i=1; i<=12; i++)
+    {
+        m_table = n * i;
+        printf("Table :\n");
+        printf("%d * %d = %d\n",n,i,m_table);
+    }
+    return 0;
+}

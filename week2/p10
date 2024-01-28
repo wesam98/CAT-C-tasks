@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main(){
+
+	int ID,pass, n_tri = 3;
+
+	while(ID = 1000 , pass = 1234){
+		printf("Enter The ID: ");
+		scanf("%d", &ID);
+		printf("Please enter the password :\n");
+		scanf("%d",&pass);
+
+		if(ID != 1000){
+
+
+            printf("You Are Not Registered\n");
+			n_tri =n_tri-1;
+		}
+		else if(ID == 1000)
+            {
+            if(pass ==1234){
+			printf("Welcome !! ");
+			break;	}
+			else{
+                 printf("You Are Not Registered\n");
+			     n_tri =n_tri-1;
+
+			}
+		}
+
+		if(!n_tri){
+			printf("No more Tries");
+			break;
+		}
+	}
+
+	return 0;
+}

@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int u_h;
+    printf("Please Enter The Height: ");
+    scanf("%d",&u_h);
+    for (int i = 0; i < u_h; i++)
+    {
+        for(int j =0; j < 2*u_h -1; j++)
+        {
+            if(j>= u_h-(i-1) && j <= u_h+(i-1))
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
